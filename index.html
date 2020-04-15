@@ -320,6 +320,41 @@
                 </table>
                 <br>
 
+                <center><h1>Keypoint detection covariance</h1></center>
+                We use Monte Carlo Dropout to obtain the semantic keypoint covariances. Figure below shows how we insert the Dropout layer into the Starmap network and the average covariance obtained from a sampled KITTI dataset.
+                <table align=center width=600px>
+                    <tr>
+                        <td width=1000px>
+                          <center>
+                              <a href="factor_graph_new.png"><img src = "keypoint_cov1.jpg" height="400px"></img></href></a><br>
+                        </center>
+                        </td>
+                    </tr>
+                        <td width=600px>
+                          <center>
+                              <span style="font-size:14px"><i>Semantic keypoint uncertainty obtained from approximate Bayesian inference through the stacked hourglass convolutional neural network.</i>
+                        </center>
+                        </td>
+                    </tr>
+                </table>
+                Below is a closer view of the keypoint covariance on one car.
+                <table align=center width=600px>
+                    <tr>
+                        <td width=1000px>
+                          <center>
+                              <a href="factor_graph_new.png"><img src = "kp_cov2.jpg" height="400px"></img></href></a><br>
+                        </center>
+                        </td>
+                    </tr>
+                        <td width=600px>
+                          <center>
+                              <span style="font-size:14px"><i>Semantic keypoint uncertainty on one car.</i>
+                        </center>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+
                 <center><h1>Tracking: KITTI 2011_09_26 0001</h1></center>
                 <table align=center width=900px>
                     <tr>
