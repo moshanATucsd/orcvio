@@ -362,11 +362,11 @@
     </center>
     Our approach uses StarMap for semantic keypoint detection. As could be observed in the upper row in Figure below, it
     could handle a certain degree of viewpoint, scale, and visibility variation, since StarMap uses a large training set
-    to
-    prevent overfitting.
+    to prevent overfitting.
     Nonetheless, the lower row shows some failure cases due to occlusion or instance variation. Wrong detections or too
-    few
-    detections will cause troubles in our approach.
+    few detections will cause troubles in our approach.
+    <br> 
+    <br> 
     <table align=center width=600px>
       <tr>
         <td width=1000px>
@@ -389,6 +389,8 @@
     </center>
     We use Monte Carlo Dropout to obtain the semantic keypoint covariances. Figure below shows how we insert the Dropout
     layer into the Starmap network and the average covariance obtained from a sampled KITTI dataset.
+    <br> 
+    <br> 
     <table align=center width=600px>
       <tr>
         <td width=1000px>
@@ -407,6 +409,8 @@
       </tr>
     </table>
     Below is a closer view of the keypoint covariance on one car.
+    <br> 
+    <br> 
     <table align=center width=600px>
       <tr>
         <td width=1000px>
@@ -431,6 +435,8 @@
   </center>
   The front end could work with both colored images or grayscale images. Below is an exmaple of using color images as
   input.
+  <br> 
+  <br> 
   <table align=center width=900px>
     <tr>
       <td width=600px>
@@ -451,7 +457,9 @@
   </center>
   This demo shows the peformance of OrcVIO in a forest using a RealSense sensor.
   The red line represents the estimated trajectory of OrcVIO. 
-  The purple ellispoid is the covariance of the pose. 
+  The purple ellispoid is the covariance of the pose.
+  <br> 
+  <br> 
   <table align=center width=900px>
     <tr>
       <td width=600px>
@@ -473,6 +481,8 @@
   The red line is the estimated trajectory, and the axes mark the current pose. The black dots are the reconstructed
   geometric landmarks, whereas the green dots are the estimated semantic keypoints.
   The blue ellipsoids are the chairs mapped by OrcVIO.
+  <br> 
+  <br> 
   <table align=center width=900px>
     <tr>
       <td width=600px>
@@ -495,6 +505,8 @@
   INDEMIND sensor. The red line is the estimated trajectory, and the axes mark the current pose. The green dots are the
   estimated semantic keypoints. The blue ellipsoids are the chairs mapped by OrcVIO, whereas the red ellipsoids are the
   bikes, and the black ellipsoids are the cars.
+  <br> 
+  <br> 
   <table align=center width=900px>
     <tr>
       <td width=600px>
@@ -514,6 +526,8 @@
   </center>
   The top left window shows the semantic keypoints tracking, while the bottom left window shows the geometric features
   tracking. The right window shows the trajectory estimation and object mapping.
+  <br> 
+  <br> 
   <table align=center width=900px>
     <tr>
       <td width=600px>
@@ -605,6 +619,8 @@
     KITTI odometry 06 uses grayscale images for both front end and back end.
     The red line is the estimated trajectory, while the purple ellipsoid is the covariance of the pose. The white points
     are the geometric landmarks, the colored dots are the active features. The black spheres are the reconstructed cars.
+    <br> 
+    <br> 
     <table align=center width=900px>
       <tr>
         <td width=600px>
@@ -626,6 +642,8 @@
     uses grayscale images from a Flea3 camera.
     The red line is the estimated trajectory, while the purple ellipsoid is the covariance of the pose. The white points
     are the geometric landmarks, the colored dots are the active features. The black spheres are the reconstructed cars.
+    <br> 
+    <br> 
     <table align=center width=900px>
       <tr>
         <td width=600px>
@@ -658,6 +676,8 @@
     OrcVIO Stereo uses stereo camera instead of monocular camera to increase robustness. This demo shows its performance
     on EuRoC V1 01 sequence.
     The red line is ground-truth trajectory, while the blue line is the estimated trajectory.
+    <br> 
+    <br> 
     <table align=center width=900px>
       <tr>
         <td width=600px>
@@ -678,6 +698,8 @@
     OrcVIO Stereo uses stereo camera instead of monocular camera to increase robustness. This demo shows its performance
     on EuRoC MH 01 sequence.
     The red line is ground-truth trajectory, while the blue line is the estimated trajectory.
+    <br> 
+    <br> 
     <table align=center width=900px>
       <tr>
         <td width=600px>
