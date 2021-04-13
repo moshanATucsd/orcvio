@@ -2,7 +2,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10550309-8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'UA-10550309-8');
@@ -12,763 +12,795 @@
 <script type="text/javascript">google.load("jquery", "1.3.2");</script>
 
 <style type="text/css">
-    body {
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        font-weight:300;
-        font-size:18px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1100px;
-    }
+  body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
 
-    h1 {
-        font-weight:300;
-    }
+  h1 {
+    font-weight: 300;
+  }
 
-    .disclaimerbox {
-        background-color: #eee;
-        border: 1px solid #eeeeee;
-        border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-        padding: 20px;
-    }
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 20px;
+  }
 
-    video.header-vid {
-        height: 140px;
-        border: 1px solid black;
-        border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-    }
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
 
-    img.header-img {
-        height: 140px;
-        border: 1px solid black;
-        border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-    }
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
 
-    img.rounded {
-        border: 1px solid #eeeeee;
-        border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-    }
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
 
-    a:link,a:visited
-    {
-        color: #1367a7;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #208799;
-    }
+  a:link,
+  a:visited {
+    color: #1367a7;
+    text-decoration: none;
+  }
 
-    td.dl-link {
-        height: 160px;
-        text-align: center;
-        font-size: 22px;
-    }
+  a:hover {
+    color: #208799;
+  }
 
-    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-        box-shadow:
-                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-                5px 5px 0 0px #fff, /* The second layer */
-                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-                10px 10px 0 0px #fff, /* The third layer */
-                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-                15px 15px 0 0px #fff, /* The fourth layer */
-                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-                20px 20px 0 0px #fff, /* The fifth layer */
-                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-                25px 25px 0 0px #fff, /* The fifth layer */
-                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
-        margin-left: 10px;
-        margin-right: 45px;
-    }
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big {
+    /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+      0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The top layer shadow */
+      5px 5px 0 0px #fff,
+      /* The second layer */
+      5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The second layer shadow */
+      10px 10px 0 0px #fff,
+      /* The third layer */
+      10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The third layer shadow */
+      15px 15px 0 0px #fff,
+      /* The fourth layer */
+      15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The fourth layer shadow */
+      20px 20px 0 0px #fff,
+      /* The fifth layer */
+      20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The fifth layer shadow */
+      25px 25px 0 0px #fff,
+      /* The fifth layer */
+      25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+    /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
 
 
-    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-        box-shadow:
-                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-                5px 5px 0 0px #fff, /* The second layer */
-                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-                10px 10px 0 0px #fff, /* The third layer */
-                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 30px;
-        margin-bottom: 5px;
-    }
+  .layered-paper {
+    /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+      0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The top layer shadow */
+      5px 5px 0 0px #fff,
+      /* The second layer */
+      5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The second layer shadow */
+      10px 10px 0 0px #fff,
+      /* The third layer */
+      10px 10px 1px 1px rgba(0, 0, 0, 0.35);
+    /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
 
-    .vert-cent {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+  .vert-cent {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-    hr
-    {
-        border: 0;
-        height: 1.5px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    }
+  hr {
+    border: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
 </style>
 
 <html>
-  <head>
-        <title>OrcVIO: Object residual constrained Visual-Inertial Odometry</title>
-        <meta property="og:title" content="orcvio" />
-        <meta property="og:image" content="" />
-        <meta property="og:url" content="" />
-  </head>
 
-  <body>
+<head>
+  <title>OrcVIO: Object residual constrained Visual-Inertial Odometry</title>
+  <meta property="og:title" content="orcvio" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <style>
+    code {
+      font-family: Consolas, "courier new";
+      color: darkcyan;
+      background-color: #f1f1f1;
+      padding: 2px;
+      font-size: 105%;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+
+  <div id="photo" style="text-align: center">
+    <img style="vertical-align:middle" src="logo.png" alt="">
+    <span style="vertical-align:middle;font-size:35px">Object residual constrained Visual-Inertial Odometry</span>
+  </div>
+
+  <br><br>
+  <table align=center width=800px>
+    <tr>
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:20px"><a href="https://moshanatucsd.github.io/">Mo Shan</a></span>
+        </center>
+      </td>
+
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:20px"><a href="https://vikasdhiman.info/">Vikas Dhiman</a></span>
+        </center>
+      </td>
+
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:20px"><a href="https://fengqiaojun.github.io/publications.html">Qiaojun Feng</a></span>
+        </center>
+      </td>
+
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:20px"><a href="https://existentialrobotics.org/pages/people.html">Jinzhao Li</a></span>
+        </center>
+      </td>
+
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:20px"><a href="https://natanaso.github.io/">Nikolay Atanasov</a></span>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <table align=center width=700px>
+    <tr>
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:20px">Department of Electrical and Computer Engineering <br> University of California,
+            San Diego<br />IROS, 2020</span>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <hr>
+  <center>
+    <h1>Overview</h1>
+  </center>
+  <hr>
+
+  <table align=center width=600px>
+    <tr>
+      <td width=1000px>
+        <center>
+          <a href="orcvio-iros-digest.png"><img src="orcvio-iros-digest.png" height="400px"></img></href></a><br>
+        </center>
+      </td>
+    </tr>
+    <td width=600px>
+      <center>
+        <span style="font-size:14px"><i>Introduction of OrcVIO.</i>
+      </center>
+    </td>
+    </tr>
+  </table>
+
+  <hr>
+  <center>
+    <h1>Teaser</h1>
+  </center>
+  <hr>
+
+  <table align=center width=600px>
+    <tr>
+      <td width=1000px>
+        <center>
+          <a href="sem_track_images.gif"><img src="sem_track_images.gif" height="400px"></img></href></a><br>
+        </center>
+      </td>
+    </tr>
+    <td width=1000px>
+      <center>
+        <span style="font-size:14px"><i>This animation shows color-coded object level tracks of semantic keypoints, and
+            green tracks of geometric features.</i>
+      </center>
+    </td>
+    </tr>
+  </table>
+
+  <table align=center width=600px>
+    <tr>
+      <td width=1000px>
+        <center>
+          <a href="bbox_images.gif"><img src="bbox_images.gif" height="400px"></img></href></a><br>
+        </center>
+      </td>
+    </tr>
+    <td width=1000px>
+      <center>
+        <span style="font-size:14px"><i>This animation shows the 2D IOU of bounding-boxes from annotation and those
+            detected by YOLO. In the label, id means our object id, while gt means id in annotation.</i>
+      </center>
+    </td>
+    </tr>
+  </table>
+
+  <table align=center width=600px>
+    <tr>
+      <td width=1000px>
+        <center>
+          <a href="reprojected_images.gif"><img src="reprojected_images.gif" height="400px"></img></href></a><br>
+        </center>
+      </td>
+    </tr>
+    <td width=1000px>
+      <center>
+        <span style="font-size:14px"><i>This animation shows the reprojected objects. The object state is reprojected on
+            the image, where object detection is the blue rectangle, object shape is the red wireframe, and the green
+            ellipse is the reprojection of the ellipsoid that we use to represent objects.</i>
+      </center>
+    </td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <hr>
+  <center>
+    <h1>Presentation</h1>
+  </center>
+  <hr>
+
+  <table align=center width=900px>
+    <tr>
+      <td width=600px>
+        <center>
+          <div class="video">
+            <iframe width="800" height="480" src="http://erl.ucsd.edu/vid/orcvio/IROS2020_submission_video.mp4"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <table align=center width=800px>
+    <tr>
+      <center> <br>
+        <span style="font-size:28px">&nbsp;<a href='OrcVIO IROS 2020 final presentation slides.pdf'>[Slides]</a>
+          <span style="font-size:28px"></a></span>
+          <br>
+      </center>
+    </tr>
+  </table>
+
+  <center>
+    <h1>演讲视频</h1>
+  </center>
+  <table align=center width=900px>
+    <tr>
+      <td width=600px>
+        <center>
+          <div class="video">
+            <iframe width="800" height="480"
+              src="//player.bilibili.com/player.html?aid=927419725&bvid=BV1MT4y1w7WY&cid=244113540&page=1"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table align=center width=800px>
+    <tr>
+      <center> <br>
+        <span style="font-size:28px">&nbsp;<a href='OrcVIO IROS 2020 final presentation slides CN.pdf'>[讲义]</a>
+          <span style="font-size:28px"></a></span>
+          <br>
+      </center>
+    </tr>
+  </table>
+
+  <br>
+  <hr>
+  <!-- <table align=center width=550px> -->
+  <table align=center width=800>
+    <center>
+      <h1>More results for OrcVIO</h1>
+    </center>
+    <hr>
+
+    <center>
+      <h1>Semantic keypoint detection</h1>
+    </center>
+    Our approach uses StarMap for semantic keypoint detection. As could be observed in the upper row in Figure below, it
+    could handle a certain degree of viewpoint, scale, and visibility variation, since StarMap uses a large training set
+    to
+    prevent overfitting.
+    Nonetheless, the lower row shows some failure cases due to occlusion or instance variation. Wrong detections or too
+    few
+    detections will cause troubles in our approach.
+    <table align=center width=600px>
+      <tr>
+        <td width=1000px>
+          <center>
+            <a href="semantic_kps.jpg"><img src="semantic_kps.jpg" height="400px"></img></href></a><br>
+          </center>
+        </td>
+      </tr>
+      <td width=600px>
+        <center>
+          <span style="font-size:14px"><i>Semantic keypoint detection from starmap.</i>
+        </center>
+      </td>
+      </tr>
+    </table>
     <br>
 
-    <div id="photo" style="text-align: center">
-      <img style="vertical-align:middle" src="logo.png" alt="">
-      <span style="vertical-align:middle;font-size:35px">Object residual constrained Visual-Inertial Odometry</span>
+    <center>
+      <h1>Keypoint detection covariance</h1>
+    </center>
+    We use Monte Carlo Dropout to obtain the semantic keypoint covariances. Figure below shows how we insert the Dropout
+    layer into the Starmap network and the average covariance obtained from a sampled KITTI dataset.
+    <table align=center width=600px>
+      <tr>
+        <td width=1000px>
+          <center>
+            <a href="keypoint_cov1.jpg"><img src="keypoint_cov1.jpg" height="200px"></img></href></a><br>
+          </center>
+        </td>
+      </tr>
+      <td width=600px>
+        <center>
+          <span style="font-size:14px"><i>Semantic keypoint uncertainty obtained from approximate Bayesian inference
+              through
+              the stacked hourglass convolutional neural network.</i>
+        </center>
+      </td>
+      </tr>
+    </table>
+    Below is a closer view of the keypoint covariance on one car.
+    <table align=center width=600px>
+      <tr>
+        <td width=1000px>
+          <center>
+            <a href="kp_cov2.png"><img src="kp_cov2.png" height="400px"></img></href></a><br>
+          </center>
+        </td>
+      </tr>
+      <td width=600px>
+        <center>
+          <span style="font-size:14px"><i>Semantic keypoint uncertainty on one car.</i>
+        </center>
+      </td>
+      </tr>
+    </table>
+    <br>
+
+  </table>
+
+  <center>
+    <h1>Detection and tracking on KITTI</h1>
+  </center>
+  The front end could work with both colored images or grayscale images. Below is an exmaple of using color images as
+  input.
+  <table align=center width=900px>
+    <tr>
+      <td width=600px>
+        <center>
+          <div class="video">
+            <iframe width="800" height="480"
+              src="http://erl.ucsd.edu/vid/orcvio/object level tracking for robot team demo oct 04 2019.mp4"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <center>
+    <h1>Forest scene</h1>
+  </center>
+  This demo shows the peformance of OrcVIO in a forest using a RealSense sensor.
+  The red line represents the estimated trajectory of OrcVIO. 
+  The purple ellispoid is the covariance of the pose. 
+  <table align=center width=900px>
+    <tr>
+      <td width=600px>
+        <center>
+          <div class="video">
+            <iframe width="800" height="480" src="http://erl.ucsd.edu/vid/orcvio/warthog forest-H407AcYDhyk.mp4"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <center>
+    <h1>Lab scene with chairs and monitors</h1>
+  </center>
+  This demo shows the construction of an object map for the lab scene with chairs, using a RealSense sensor.
+  The red line is the estimated trajectory, and the axes mark the current pose. The black dots are the reconstructed
+  geometric landmarks, whereas the green dots are the estimated semantic keypoints.
+  The blue ellipsoids are the chairs mapped by OrcVIO.
+  <table align=center width=900px>
+    <tr>
+      <td width=600px>
+        <center>
+          <div class="video">
+            <iframe width="800" height="480"
+              src="http://erl.ucsd.edu/vid/orcvio/OrcVIO in ERL with realsense chair only.mp4" frameborder="0"
+              allowfullscreen></iframe>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <center>
+    <h1>Outdoor scene at UCSD campus</h1>
+  </center>
+  This demo shows the construction of an object map for the outdoor scene with chairs, bikes, and cars, using an
+  INDEMIND sensor. The red line is the estimated trajectory, and the axes mark the current pose. The green dots are the
+  estimated semantic keypoints. The blue ellipsoids are the chairs mapped by OrcVIO, whereas the red ellipsoids are the
+  bikes, and the black ellipsoids are the cars.
+  <table align=center width=900px>
+    <tr>
+      <td width=600px>
+        <center>
+          <div class="video">
+            <iframe width="800" height="480" src="http://erl.ucsd.edu/vid/orcvio/OrcVIO Indemind demo at UCSD.mp4"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <center>
+    <h1>KITTI raw data 09 26 0117</h1>
+  </center>
+  The top left window shows the semantic keypoints tracking, while the bottom left window shows the geometric features
+  tracking. The right window shows the trajectory estimation and object mapping.
+  <table align=center width=900px>
+    <tr>
+      <td width=600px>
+        <center>
+          <div class="video">
+            <iframe width="800" height="480" src="http://erl.ucsd.edu/vid/orcvio/OrcVIO KITTI raw data 09 26 0117.mp4"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <center>
+    <h1>Unity simulator: object map with 40 cars</h1>
+  </center>
+  <table align=center width=600px>
+    <tr>
+      <td width=1000px>
+        <center>
+          <a href="orcvio-unity-40cars.png"><img src="orcvio-unity-40cars.png" height="800px"></img></href></a><br>
+        </center>
+      </td>
+    </tr>
+    <td width=600px>
+      <center>
+        <span style="font-size:14px"><i>Upper row: Unity simulation scene. Lower row: reconstructed objects, where the
+            orange line is the estimated trajectory, the green ellipsoids
+            are the reconstructed cars, and the blue meshes are the groundtruth car positions.</i>
+      </center>
+    </td>
+    </tr>
+  </table>
+
+  <center>
+    <h1>Unity simulator: object map with car and door categories</h1>
+  </center>
+  <table align=center width=600px>
+    <tr>
+      <td width=1000px>
+        <center>
+          <a href="orcvio_journal_intro.png"><img src="orcvio_journal_intro.png" height="800px"></img></href></a><br>
+        </center>
+      </td>
+    </tr>
+    <td width=600px>
+      <center>
+        <span style="font-size:14px"><i>We propose a tightly coupled visual-inertial odometry and object state
+            optimization algorithm. (a) A simulated scene from Unity, where a quadrotor flies over cars and doors. (b)
+            Color-coded semantic keypoint tracklets on cars and doors. (c) Estimated trajectory (green) that coincides
+            with the groundtruth trajectory (red), and the object map with reconstructed cars (green ellipsoids), doors
+            (red ellispoids), semantic keypoints (yellow spheres), and the groundtruth objects (blue meshes).</i>
+      </center>
+    </td>
+    </tr>
+  </table>
+
+  <center>
+    <h1>Unity simulator: demo with cars, doors, and barriers</h1>
+  </center>
+  <table align=center width=900px>
+    <tr>
+      <td width=600px>
+        <center>
+          <div class="video">
+            <iframe width="800" height="480" src="http://erl.ucsd.edu/vid/orcvio/OrcVIO Unity dataset demo video.mp4"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <br>
+  <hr>
+  <!-- <table align=center width=550px> -->
+  <table align=center width=800>
+    <center>
+      <h1>More results for OrcVIO Lite</h1>
+    </center>
+    <hr>
+
+    <center>
+      <h1>KITTI odometry 06</h1>
+    </center>
+    OrcVIO Lite uses bounding box only and no semantic keypoints, more suitable for real time experiments. The test on
+    KITTI odometry 06 uses grayscale images for both front end and back end.
+    The red line is the estimated trajectory, while the purple ellipsoid is the covariance of the pose. The white points
+    are the geometric landmarks, the colored dots are the active features. The black spheres are the reconstructed cars.
+    <table align=center width=900px>
+      <tr>
+        <td width=600px>
+          <center>
+            <div class="video">
+              <iframe width="800" height="480" src="http://erl.ucsd.edu/vid/orcvio/OrcVIO Lite KITTI Odometry 06.mp4"
+                frameborder="0" allowfullscreen></iframe>
+            </div>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+    <center>
+      <h1>Flea3 camera</h1>
+    </center>
+    OrcVIO Lite uses bounding box only and no semantic keypoints, more suitable for real time experiments. This test
+    uses grayscale images from a Flea3 camera.
+    The red line is the estimated trajectory, while the purple ellipsoid is the covariance of the pose. The white points
+    are the geometric landmarks, the colored dots are the active features. The black spheres are the reconstructed cars.
+    <table align=center width=900px>
+      <tr>
+        <td width=600px>
+          <center>
+            <div class="video">
+              <iframe width="800" height="480"
+                src="http://erl.ucsd.edu/vid/orcvio/OrcVIO-Lite at Medfield with Flea3 camera on quadrotor.mp4"
+                frameborder="0" allowfullscreen></iframe>
+            </div>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+  </table>
+
+  <br>
+  <hr>
+  <!-- <table align=center width=550px> -->
+  <table align=center width=800>
+    <center>
+      <h1>More results for OrcVIO Stereo</h1>
+    </center>
+    <hr>
+
+    <center>
+      <h1>EuRoC V1 01</h1>
+    </center>
+    OrcVIO Stereo uses stereo camera instead of monocular camera to increase robustness. This demo shows its performance
+    on EuRoC V1 01 sequence.
+    The red line is ground-truth trajectory, while the blue line is the estimated trajectory.
+    <table align=center width=900px>
+      <tr>
+        <td width=600px>
+          <center>
+            <div class="video">
+              <iframe width="800" height="480" src="http://erl.ucsd.edu/vid/orcvio/stereo_orcvio_euroc_v101.mp4"
+                frameborder="0" allowfullscreen></iframe>
+            </div>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+    <center>
+      <h1>EuRoC MH 01</h1>
+    </center>
+    OrcVIO Stereo uses stereo camera instead of monocular camera to increase robustness. This demo shows its performance
+    on EuRoC MH 01 sequence.
+    The red line is ground-truth trajectory, while the blue line is the estimated trajectory.
+    <table align=center width=900px>
+      <tr>
+        <td width=600px>
+          <center>
+            <div class="video">
+              <iframe width="800" height="480" src="http://erl.ucsd.edu/vid/orcvio/stereo orcvio MH01 FEJ.mp4"
+                frameborder="0" allowfullscreen></iframe>
+            </div>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+  </table>
+
+
+
+  <hr>
+  <table align=center width=900>
+    <center>
+      <h1>IROS Paper</h1>
+    </center>
+    <hr>
+    <tr>
+      <pre xml:space="preserve">
+        @inproceedings{orcvio,
+          title = {OrcVIO: Object residual constrained Visual-Inertial Odometry},
+          author={M. {Shan} and Q. {Feng} and N. {Atanasov}},
+          year = {2020},
+          booktitle={IEEE Intl. Conf. on Intelligent Robots and Systems (IROS).},
+          url = {http://erl.ucsd.edu/pages/orcvio.html},
+          pdf = {https://arxiv.org/abs/2007.15107}
+        }
+      </pre>
+      <table align=center width=800px>
+        <tr>
+          <center> <br>
+            <span style="font-size:28px">&nbsp;<a href='0072.pdf'>[IROS version]</a>
+              <span style="font-size:28px"></a></span>
+              <br>
+          </center>
+        </tr>
+      </table>
+
+      <table align=center width=800px>
+        <tr>
+          <center> <br>
+            <span style="font-size:28px">&nbsp;<a href='https://arxiv.org/abs/2007.15107'>[arXiv version]</a>
+              <span style="font-size:28px"></a></span>
+              <br>
+          </center>
+        </tr>
+      </table>
+    </tr>
+
+    <hr>
+
+
+    <center>
+      <h1>Code</h1>
+    </center>
+    <hr>
+
+    <table align=center width=800px>
+      <tr>
+        <center> <br>
+          <span style="font-size:28px">&nbsp;<a
+              href='https://github.com/moshanATucsd/starmap_semantic_keypoints_with_covariance'>[Semantic keypoint
+              detection]</a>
+            <span style="font-size:28px"></a></span>
+            <br>
+        </center>
+      </tr>
+    </table>
+
+    <table align=center width=800px>
+      <tr>
+        <center> <br>
+          <span style="font-size:28px">&nbsp;<a href='https://github.com/moshanATucsd/OrcVIO_Lite'>[OrcVIO Lite]</a>
+            <span style="font-size:28px"></a></span>
+            <br>
+        </center>
+      </tr>
+    </table>
+
+    <table align=center width=800px>
+      <tr>
+        <center> <br>
+          <span style="font-size:28px">&nbsp;<a href='https://github.com/moshanATucsd/OrcVIO_Lite'>[OrcVIO Stereo]</a>
+            <span style="font-size:28px"></a></span>
+            <br>
+        </center>
+      </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <table align=center width=1100px>
+      <tr>
+        <td>
+          <left>
+            <center>
+              <h1>Acknowledgements</h1>
+            </center>
+            <hr>
+            <p>This webpage template was borrowed from <a
+                href="https://akanazawa.github.io/cmr/">https://akanazawa.github.io/cmr/</a>.</p>
+            <p>The acronym of our method is inspired by Warcraft III, and to celebrate that <a
+                href="https://warcraft3.info/articles/361">Fly100% won the WCG2020 using Orc</a>.</p>
+            <p>QR code generated from <a href="https://www.qrcode-monkey.com/">https://www.qrcode-monkey.com/</a>.</p>
+          </left>
+        </td>
+      </tr>
+    </table>
+    <div style="display:inline-block;width:200px;">
+      <script type="text/javascript"
+        src="//rf.revolvermaps.com/0/0/7.js?i=556zb6z1e66&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0"
+        async="async"></script>
     </div>
 
     <br><br>
-      <table align=center width=800px>
-       <tr>
-         <td align=center width=100px>
-         <center>
-         <span style="font-size:20px"><a href="https://moshanatucsd.github.io/">Mo Shan</a></span>
-         </center>
-         </td>
-
-        <td align=center width=100px>
-        <center>
-        <span style="font-size:20px"><a href="https://fengqiaojun.github.io/publications.html">Qiaojun Feng</a></span>
-        </center>
-        </td>
-
-        <td align=center width=100px>
-        <center>
-        <span style="font-size:20px"><a href="https://natanaso.github.io/">Nikolay Atanasov</a></span>
-        </center>
-        </td>
-     </tr>
-    </table>
-
-    <table align=center width=700px>
-       <tr>
-        <td align=center width=100px>
-        <center>
-        <span style="font-size:20px">Department of Electrical and Computer Engineering <br> University of California, San Diego<br/></span>
-        </center>
-        </td>
-     </tr>
-    </table>
-
-    <br>
-
-    <!-- <table align=center width=400px>
-     <tr>
-       <td align=center width=100px>
-       <center>
-       <span style="font-size:20px"><a href="">[Paper]</a></span>
-       </center>
-       </td>
-
-      <td align=center width=100px>
-      <center>
-      <span style="font-size:20px"><a href="https://youtu.be/cYHQKtBLI3Q">[Video]</a></span>
-      </center>
-      </td>
-
-      <td align=center width=100px>
-      <center>
-      <span style="font-size:20px"><a href="">[Code]</a></span>
-      </center>
-      </td>
-     </tr>
-    </table> -->
-
-            <br><br>
-
-            <hr>
-                  <center><h1>Introduction</h1></center>
-            <hr>
-
-            <table align=center width=600px>
-                <tr>
-                    <td width=1000px>
-                      <center>
-                          <a href="orcvio-iros-digest.png"><img src = "orcvio-iros-digest.png" height="400px"></img></href></a><br>
-                    </center>
-                    </td>
-                </tr>
-                    <td width=600px>
-                      <center>
-                          <span style="font-size:14px"><i>Introduction of OrcVIO.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-
-            <!-- Introducing object-level semantics into the representations that autonomous systems use for simultaneous localization and mapping (SLAM) is critical, not only for improved performance but also for enabling tasks specified in terms of meaningful objects. This work presents OrcVIO, an algorithm for visual-inertial odometry, tightly coupled with tracking and optimization over structured object models. OrcVIO differentiates through semantic feature and bounding-box reprojection errors to perform batch optimization over the pose and shape of observed objects. The estimated object states aid in real-time incremental optimization over the IMU-camera states. The ability of OrcVIO for accurate trajectory estimation and large-scale object-level mapping is evaluated using real data. -->
-
-            <table align=center width=600px>
-                <tr>
-                    <td width=1000px>
-                      <center>
-                          <a href="sem_track_images.gif"><img src = "sem_track_images.gif" height="400px"></img></href></a><br>
-                    </center>
-                    </td>
-                </tr>
-                    <td width=1000px>
-                      <center>
-                          <span style="font-size:14px"><i>This animation shows color-coded object level tracks of semantic keypoints, and green tracks of geometric features.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-
-            <table align=center width=600px>
-                <tr>
-                    <td width=1000px>
-                      <center>
-                          <a href="bbox_images.gif"><img src = "bbox_images.gif" height="400px"></img></href></a><br>
-                    </center>
-                    </td>
-                </tr>
-                    <td width=1000px>
-                      <center>
-                          <span style="font-size:14px"><i>This animation shows the 2D IOU of bounding-boxes from annotation and those detected by YOLO. In the label, id means our object id, while gt means id in annotation.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-
-            <table align=center width=600px>
-                <tr>
-                    <td width=1000px>
-                      <center>
-                          <a href="reprojected_images.gif"><img src = "reprojected_images.gif" height="400px"></img></href></a><br>
-                    </center>
-                    </td>
-                </tr>
-                    <td width=1000px>
-                      <center>
-                          <span style="font-size:14px"><i>This animation shows the reprojected objects. The object state is reprojected on the image, where object detection is the blue rectangle, object shape is the red wireframe, and the green ellipse is the reprojection of the ellipsoid that we use to represent objects.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-
-            <br><br>
-
-            <hr>
-                  <center><h1>Demo videos</h1></center>
-            <hr>
-
-                  <center><h1>Demo: short version</h1></center>
-                  <table align=center width=900px>
-                      <tr>
-                          <td width=600px>
-                            <center>
-                              <div class = "video">
-                                <iframe width="800" height="480" src="https://www.youtube.com/embed/bJzAIEfnez8" frameborder="0" allowfullscreen></iframe>
-                             </div>
-                          </center>
-                          </td>
-                      </tr>
-                  </table>
-                  <br>
-
-                <center><h1>Demo: long version</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/fPfBzfGnEcY" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Presentation video</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/0ni-CBCyYsM" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <table align=center width=800px>
-                  <tr><center> <br>
-                    <span style="font-size:28px">&nbsp;<a href='OrcVIO IROS 2020 final presentation slides.pdf'>[Slides]</a>
-                    <span style="font-size:28px"></a></span>
-                  <br>
-                  </center></tr>
-                </table>
-
-                <center><h1>演讲视频</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="//player.bilibili.com/player.html?aid=927419725&bvid=BV1MT4y1w7WY&cid=244113540&page=1" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <table align=center width=800px>
-                  <tr><center> <br>
-                    <span style="font-size:28px">&nbsp;<a href='OrcVIO IROS 2020 final presentation slides CN.pdf'>[讲义]</a>
-                    <span style="font-size:28px"></a></span>
-                  <br>
-                  </center></tr>
-                </table>
-
-                <hr>
-                      <center><h1>Front end</h1></center>
-                <hr>
-
-                <center><h1>Semantic keypoint detection</h1></center>
-                Our approach uses StarMap for semantic keypoint detection. As could be observed in the upper row in Figure below, it could handle a certain degree of viewpoint, scale, and visibility variation, since StarMap uses a large training set to prevent overfitting.
-                Nonetheless, the lower row shows some failure cases due to occlusion or instance variation. Wrong detections or too few detections will cause troubles in our approach.
-                <table align=center width=600px>
-                    <tr>
-                        <td width=1000px>
-                          <center>
-                              <a href="semantic_kps.jpg"><img src = "semantic_kps.jpg" height="400px"></img></href></a><br>
-                        </center>
-                        </td>
-                    </tr>
-                        <td width=600px>
-                          <center>
-                              <span style="font-size:14px"><i>Semantic keypoint detection from starmap.</i>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Keypoint detection covariance</h1></center>
-                We use Monte Carlo Dropout to obtain the semantic keypoint covariances. Figure below shows how we insert the Dropout layer into the Starmap network and the average covariance obtained from a sampled KITTI dataset.
-                <table align=center width=600px>
-                    <tr>
-                        <td width=1000px>
-                          <center>
-                              <a href="keypoint_cov1.jpg"><img src = "keypoint_cov1.jpg" height="200px"></img></href></a><br>
-                        </center>
-                        </td>
-                    </tr>
-                        <td width=600px>
-                          <center>
-                              <span style="font-size:14px"><i>Semantic keypoint uncertainty obtained from approximate Bayesian inference through the stacked hourglass convolutional neural network.</i>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                Below is a closer view of the keypoint covariance on one car.
-                <table align=center width=600px>
-                    <tr>
-                        <td width=1000px>
-                          <center>
-                              <a href="kp_cov2.png"><img src = "kp_cov2.png" height="400px"></img></href></a><br>
-                        </center>
-                        </td>
-                    </tr>
-                        <td width=600px>
-                          <center>
-                              <span style="font-size:14px"><i>Semantic keypoint uncertainty on one car.</i>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Detection: KITTI 2011_09_26 0095</h1></center>
-                The front end could work with both colored images or grayscale images. Below is an exmaple of using grayscale images as input.
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/Nsqlapj4dUM" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Tracking: KITTI 2011_09_26 0001</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/FD3-5b916Rk" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Tracking: KITTI odometry sequences</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/olxys1jvswI" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <hr>
-                      <center><h1>Back end</h1></center>
-                <hr>
-
-                <center><h1>Prediction only using velocity measurements: KITTI Odometry 07</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/pUORQQx3v1I" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Geometric feature update: KITTI raw data 09 26 0022</h1></center>
-                The green path is the groundtruth, the red path is the estimated trajectory, and the
-                purple ellipsoid is the covariance of the pose estimation.
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/ZPzM0p-VKh0" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Geometric feature update: KITTI Odometry 06</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/LosrQVelCms" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Geometric feature update: KITTI Odometry 07</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/IC-7Lf6sSEQ" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Geometric feature update: outdoor scene with RealSense D435i</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/nAuee0nubgk" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Object LM: simulation</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/dd6Wb0KjpcQ" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>OrcVIO: Lab scene with chairs and monitors</h1></center>
-                This demo shows the construction of an object map for the lab scene with chairs and monitors, using a RealSense sensor.
-                The red line is the estimated trajectory, and the axes mark the current pose. The black dots are the reconstructed geometric landmarks, whereas the green dots are the estimated semantic keypoints.
-                The blue ellipsoids are the chairs and the orange ellipsoids are the monitors mapped by OrcVIO.
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/i2QRf6tQdXk" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>OrcVIO: outdoor scene at UCSD campus</h1></center>
-                This demo shows the construction of an object map for the outdoor scene with chairs, bikes, and cars, using an INDEMIND sensor. The red line is the estimated trajectory, and the axes mark the current pose. The green dots are the estimated semantic keypoints. The blue ellipsoids are the chairs mapped by OrcVIO, whereas the red ellipsoids are the bikes, and the black ellipsoids are the cars.
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/qJ3OaDUGzAw" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>OrcVIO: KITTI raw data 09 26 0117</h1></center>
-                The top left window shows the semantic keypoints tracking, while the bottom left window shows the geometric features tracking. The right window shows the trajectory estimation and object mapping.
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/F1kT9ooW4aw" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Reprojection: KITTI odometry sequences</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/1Zia5Fbduxw" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>Unity simulator: object map with 40 cars</h1></center>
-                <table align=center width=600px>
-                    <tr>
-                        <td width=1000px>
-                          <center>
-                              <a href="orcvio-unity-40cars.png"><img src = "orcvio-unity-40cars.png" height="800px"></img></href></a><br>
-                        </center>
-                        </td>
-                    </tr>
-                        <td width=600px>
-                          <center>
-                              <span style="font-size:14px"><i>Upper row: Unity simulation scene. Lower row: reconstructed objects, where the orange line is the estimated trajectory, the green ellipsoids
-                              are the reconstructed cars, and the blue meshes are the groundtruth car positions.</i>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-
-                <center><h1>Unity simulator: object map with car and door categories</h1></center>
-                <table align=center width=600px>
-                    <tr>
-                        <td width=1000px>
-                          <center>
-                              <a href="orcvio_journal_intro.png"><img src = "orcvio_journal_intro.png" height="800px"></img></href></a><br>
-                        </center>
-                        </td>
-                    </tr>
-                        <td width=600px>
-                          <center>
-                              <span style="font-size:14px"><i>We propose a tightly coupled visual-inertial odometry and object state optimization algorithm. (a) A simulated scene from Unity, where a quadrotor flies over cars and doors. (b) Color-coded semantic keypoint tracklets on cars and doors. (c) Estimated trajectory (green) that coincides with the groundtruth trajectory (red), and the object map with reconstructed cars (green ellipsoids), doors (red ellispoids), semantic keypoints (yellow spheres), and the groundtruth objects (blue meshes).</i>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-
-                <center><h1>Unity simulator: demo with cars, doors, and barriers</h1></center>
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/I4MwpeSFVho" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>OrcVIO Lite: KITTI odometry 06</h1></center>
-                OrcVIO Lite uses bounding box only and no semantic keypoints, more suitable for real time experiments. The test on KITTI odometry 06 uses grayscale images for both front end and back end.
-                The red line is the estimated trajectory, while the purple ellipsoid is the covariance of the pose. The white points are the geometric landmarks, the colored dots are the active features. The black spheres are the reconstructed cars.
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/VlnG64WS434" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>OrcVIO Lite: Flea3 camera</h1></center>
-                OrcVIO Lite uses bounding box only and no semantic keypoints, more suitable for real time experiments. This test uses grayscale images from a Flea3 camera.
-                The red line is the estimated trajectory, while the purple ellipsoid is the covariance of the pose. The white points are the geometric landmarks, the colored dots are the active features. The black spheres are the reconstructed cars.
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/Ia7vIo3eI5A" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-                <center><h1>OrcVIO Lite: Jackal robot</h1></center>
-                OrcVIO Lite runs in-the-loop onboard a Jackal robot, which is equipped with a RealSense sensor.
-                <table align=center width=900px>
-                    <tr>
-                        <td width=600px>
-                          <center>
-                            <div class = "video">
-                              <iframe width="800" height="480" src="https://www.youtube.com/embed/TB_kiBnRL1Q" frameborder="0" allowfullscreen></iframe>
-                           </div>
-                           <div class = "video">
-                             <iframe width="800" height="480" src="https://www.youtube.com/embed/jn1yIclkoXo" frameborder="0" allowfullscreen></iframe>
-                          </div>
-                        </center>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-
-        <hr>
-         <center><h1>Code</h1></center>
-        <hr>
-
-            <table align=center width=800px>
-              <tr><center> <br>
-                <span style="font-size:28px">&nbsp;<a href='https://github.com/moshanATucsd/starmap_semantic_keypoints_with_covariance'>[Semantic keypoint detection]</a>
-                <span style="font-size:28px"></a></span>
-              <br>
-              </center></tr>
-            </table>
-
-            <table align=center width=800px>
-              <tr><center> <br>
-                <span style="font-size:28px">&nbsp;<a href='https://github.com/moshanATucsd/OrcVIO_Lite'>[OrcVIO Lite]</a>
-                <span style="font-size:28px"></a></span>
-              <br>
-              </center></tr>
-            </table>
-
-        <br>
-
-        <table align=center width=1100px>
-        <tr>
-        <td>
-
-          <left>
-            <hr>
-            <center><h1>Paper</h1></center>
-            <hr>
-
-            <table align=center width=800px>
-              <tr><center> <br>
-                <span style="font-size:28px">&nbsp;<a href='0072.pdf'>[IROS version]</a>
-                <span style="font-size:28px"></a></span>
-              <br>
-              </center></tr>
-            </table>
-
-            <table align=center width=800px>
-              <tr><center> <br>
-                <span style="font-size:28px">&nbsp;<a href='https://arxiv.org/abs/2007.15107'>[arXiv version]</a>
-                <span style="font-size:28px"></a></span>
-              <br>
-              </center></tr>
-            </table>
-
-            <pre xml:space="preserve">
-            @inproceedings{orcvio,
-              title = {OrcVIO: Object residual constrained Visual-Inertial Odometry},
-              author={M. {Shan} and Q. {Feng} and N. {Atanasov}},
-              year = {2020},
-              booktitle={IEEE Intl. Conf. on Intelligent Robots and Systems (IROS).},
-              url = {https://moshanatucsd.github.io/orcvio_githubpage/},
-              pdf = {https://arxiv.org/abs/2007.15107}
-            }
-            </pre>
-          </left>
-
-
-            <left>
-              <hr>
-                <center><h1>Acknowledgements</h1></center>
-              <hr>
-
-                <p>This webpage template was borrowed from <a href="https://akanazawa.github.io/cmr/">https://akanazawa.github.io/cmr/</a>.</p>
-                <p>The acronym of our method is inspired by Warcraft III, and to celebrate that <a href="https://warcraft3.info/articles/361">Fly100% won the WCG2020 using Orc</a>.</p>
-                <p>QR code generated from <a href="https://www.qrcode-monkey.com/">https://www.qrcode-monkey.com/</a>.</p>
-
-            </left>
-        </td>
-        </tr>
-        </table>
-<div id="photo" style="text-align: center">
-  <img style="inline-block;width:200px;" src="qr-code.png" alt="">
-</div>
-<div style="display:inline-block;width:200px;"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=556zb6z1e66&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script></div>
-        <br><br>
 </body>
+
 </html>
