@@ -692,6 +692,31 @@
     </table>
     <br>
 
+    <center>
+      <h1>Jackal robot</h1>
+    </center>
+    OrcVIO Lite runs on a Jackal robot, which is equipped with a RealSense sensor.
+    The yellow path is the VIO trajectory, whereas the red ellipsoids are the detected barrels. The marker size for barrels are exagerated for illustration purpose. 
+    The barrel detection and tracking results are shown on the top left, where the bounding boxes show detections and the lines are the tracklets of the bounding boxes. 
+    The tracklets are very long since the Jackal has a large viewpoint change. In this case the SORT tracker is modified to use centroid distance for affinity instead of IOU. 
+    Due to the low quality IMU, the inertial data is not reliable and there is significant drift. The constant stop also makes it challenging for VIO. 
+    Despite those difficulties, OrcVIO Lite is still able to localize the robot and map the barrels.
+    <br>
+    <br>
+    <table align=center width=900px>
+      <tr>
+        <td width=600px>
+          <center>
+            <div class="video">
+              <iframe width="800" height="480" src="//player.bilibili.com/player.html?aid=375718457&bvid=BV1so4y117G4&cid=340731746&page=1" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+
   </table>
 
   <br>
